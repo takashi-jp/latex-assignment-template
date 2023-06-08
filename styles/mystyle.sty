@@ -1,0 +1,51 @@
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\bibliographystyle{junsrt}
+\usepackage[superscript]{cite} % 引用を上付にする
+\usepackage{upgreek}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{graphicx} 
+\usepackage[margin=25truemm]{geometry} % 余白の設定
+\usepackage{here}
+
+% Section setup %
+\makeatletter
+    \renewcommand{\section}{\@startsection{section}{1}{\z@}
+    {1.5\Cvs \@plus.5\Cvs \@minus.2\Cvs}
+    {.5\Cvs \@plus.3\Cvs}
+    {\reset@font\large\mcfamily}}
+\makeatother
+
+% Subsection setup %
+\makeatletter
+    \renewcommand{\subsection}{\@startsection{subsection}{1}{\z@}
+    {1.5\Cvs \@plus.5\Cvs \@minus.2\Cvs}
+    {.5\Cvs \@plus.3\Cvs}
+    {\reset@font\large\mcfamily}}
+\makeatother
+
+\usepackage{listings,jvlisting}
+% Setup about code
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  % numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=0zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+\renewcommand{\lstlistingname}{Program}
